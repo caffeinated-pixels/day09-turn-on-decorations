@@ -23,6 +23,7 @@ body,
 body {
   background-color: var(--dark-green);
   height: 100vh;
+  font-family: 'Mountains of Christmas', cursive;
 }
 
 .container {
