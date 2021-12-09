@@ -2,7 +2,9 @@ const house = document.getElementById('house')
 const decorator = document.getElementById('decorator')
 decorator.addEventListener('click', deckTheHalls)
 
-function deckTheHalls() {}
+function deckTheHalls(e) {
+  e.target.checked ? (house.textContent = '☃️🏡🎄') : (house.textContent = '🏡')
+}
 
 // Task:
 // Write a function to add decorations (e.g. ☃️, 🎄, etc) next to the house when the switch is toggled.
