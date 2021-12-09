@@ -1,9 +1,16 @@
 const house = document.getElementById('house')
+const message = document.getElementById('message')
 const decorator = document.getElementById('decorator')
 decorator.addEventListener('click', deckTheHalls)
 
 function deckTheHalls(e) {
-  e.target.checked ? (house.textContent = '☃️🏡🎄') : (house.textContent = '🏡')
+  if (e.target.checked) {
+    house.textContent = '☃️🏡🎄'
+    message.style.visibility = 'visible'
+  } else {
+    house.textContent = '🏡'
+    message.style.visibility = 'hidden'
+  }
 }
 
 // Task:

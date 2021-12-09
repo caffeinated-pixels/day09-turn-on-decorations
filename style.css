@@ -81,3 +81,13 @@ input[type='checkbox'] {
   transform: translate(18px);
   background-color: var(--snow);
 }
+
+.house,
+.message {
+  margin-bottom: 0.5em;
+}
+
+.message {
+  margin-top: 0;
+  visibility: hidden;
+}
